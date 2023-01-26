@@ -1,0 +1,116 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-weight: 500 !important;
+  line-height: 25px;
+  color: #60636c !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+/*  CSS home section */
+#home h1 {
+  font-size: 80px !important;
+}
+
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+}
+/*   FIN CSS home section */
+
+/*  All CSS aPropos section */
+#aPropos .container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#aPropos h1 {
+  position: absolute;
+  left: 80px;
+  font-size: 200px;
+  line-height: 200px;
+  letter-spacing: 10px;
+  z-index: 1;
+  color: #f0f0f5;
+  font-weight: 700;
+}
+
+#aPropos h2 {
+  padding-top: 180px;
+  color: #60636c;
+  margin-bottom: 56px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.welcom-img {
+  margin-top: 150px;
+}
+
+.welcome-text {
+  padding-left: 20%;
+  margin-right: 10%;
+  max-width: 60%;
+}
+
+@media (max-width: 1024px) {
+  #aPropos .container {
+    flex-direction: column;
+  }
+  .welcome-text {
+    max-width: 100%;
+  }
+  #aPropos h1 {
+    font-size: 110px;
+  }
+  #aPropos h2 {
+    font-size: 50px;
+    padding-top: 150px;
+    margin-bottom: 30px;
+  }
+  .welcom-img {
+    width: 50%;
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #aPropos h1 {
+    display: none;
+  }
+  #aPropos h2 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 70px;
+  }
+  .welcom-img {
+    width: 60%;
+    margin: 30px auto;
+  }
+}
+
+/*  fin CSS aPropos section */
+
+/*  CSS  section */
