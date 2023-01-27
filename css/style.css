@@ -13,9 +13,28 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
 /*  CSS home section */
+
 #home h1 {
   font-size: 80px !important;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 60%,
+    rgba(57, 56, 56) 100%
+  );
 }
 
 .desktop-img {
@@ -30,9 +49,14 @@ body {
   .desktop-img {
     display: none;
   }
-
   .mobile-img {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #home h1 {
+    font-size: 30px !important;
   }
 }
 /*   FIN CSS home section */
