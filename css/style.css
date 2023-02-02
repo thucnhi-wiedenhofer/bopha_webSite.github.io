@@ -13,6 +13,12 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+h2 {
+  font-size: 56px !important;
+  font-weight: 700 !important;
+  line-height: 56px !important;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1140px !important;
@@ -37,8 +43,16 @@ body {
   );
 }
 
+.navbar-nav {
+  font-weight: 600;
+}
+
 .desktop-img {
   display: block;
+}
+
+.tablet-img {
+  display: none;
 }
 
 .mobile-img {
@@ -49,12 +63,24 @@ body {
   .desktop-img {
     display: none;
   }
-  .mobile-img {
+  .tablet-img {
     display: block;
+  }
+  .mobile-img {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
+  .desktop-img {
+    display: none;
+  }
+  .tablet-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
   #home h1 {
     font-size: 30px !important;
   }
@@ -82,11 +108,7 @@ body {
 
 #aPropos h2 {
   padding-top: 180px;
-  color: #60636c;
   margin-bottom: 56px;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 56px;
 }
 
 .welcom-img {
@@ -99,12 +121,20 @@ body {
   max-width: 60%;
 }
 
+@media (min-width: 1400px) {
+  #aPropos h1 {
+    left: 200px;
+  }
+}
+
 @media (max-width: 1024px) {
   #aPropos .container {
     flex-direction: column;
   }
   .welcome-text {
     max-width: 100%;
+    padding-left: 0px;
+    margin-left: 10%;
   }
   #aPropos h1 {
     font-size: 110px;
@@ -130,11 +160,197 @@ body {
     padding-top: 70px;
   }
   .welcom-img {
-    width: 60%;
+    width: 80%;
     margin: 30px auto;
   }
 }
 
 /*  fin CSS aPropos section */
 
-/*  CSS  section */
+/*  CSS  Services section */
+#services button,
+#footer button {
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  padding: 20px 40px !important;
+}
+
+.arrow {
+  margin-left: 20px;
+}
+
+.services-card {
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  top: 500px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .services-card {
+    max-width: 400px;
+  }
+  .middle {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-title {
+    top: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    top: 190px;
+  }
+}
+
+@media (max-width: 414px) {
+  #services button {
+    display: none !important;
+  }
+  .card-title {
+    top: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .card-title {
+    top: 220px;
+  }
+}
+@media (max-width: 320px) {
+  .card-title {
+    top: 180px;
+  }
+}
+/*  fin CSS services section */
+
+/*  CSS  footer section */
+
+footer {
+  height: 200px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  background-color: #f0f0f5;
+}
+
+#footer .container {
+  text-align: center;
+  position: relative;
+  flex-flow: row;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer-img {
+  background-color: #1b1d23;
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+footer .navbar-nav {
+  flex-direction: row !important;
+  font-weight: 600;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 20px;
+}
+
+footer button {
+  width: 300px;
+  height: 72px;
+  margin-right: 10%;
+}
+
+@media (min-width: 1400px) {
+  footer button {
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    height: 160px;
+  }
+
+  .footer-img {
+    width: 15%;
+    padding: 10px;
+  }
+  footer button {
+    width: 250px;
+    height: 72px;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width: 766px) {
+  footer .navbar {
+    display: inline;
+  }
+
+  footer .navbar-nav {
+    flex-direction: column !important;
+    margin: 20px;
+  }
+
+  footer {
+    height: 350px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  #footer .container {
+    flex-direction: column !important;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    position: absolute;
+    top: -50px;
+    margin-right: 0px;
+  }
+
+  .nav-item {
+    margin: 0px;
+  }
+
+  footer button {
+    width: 280px;
+    height: 72px;
+    margin-right: 0%;
+  }
+}
