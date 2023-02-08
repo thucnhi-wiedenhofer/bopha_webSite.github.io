@@ -19,6 +19,12 @@ h2 {
   line-height: 56px !important;
 }
 
+.button {
+  font-weight: 500 !important;
+  border-radius: 0 !important;
+  padding: 20px 40px !important;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1140px !important;
@@ -176,13 +182,7 @@ h2 {
 /*  fin CSS aPropos section */
 
 /*  CSS  Services section */
-#services button,
-#footer button {
-  font-weight: 500 !important;
-  border-radius: 0 !important;
-  padding: 20px 40px !important;
-}
-
+ 
 .arrow {
   margin-left: 20px;
 }
@@ -231,7 +231,8 @@ h2 {
 }
 
 @media (max-width: 414px) {
-  #services button {
+  #services .button,
+  #galerie .button {
     display: none !important;
   }
   .card-title {
@@ -442,9 +443,7 @@ footer button {
     width: 100%;
   }
 }
-/*  fin CSS services section */
 
-/*  CSS pages cours floral section */
 #coursFloral {
   background-color:#f0f0f5;
   padding-bottom: 30px;
@@ -506,4 +505,16 @@ footer button {
   #coursFloral .container {
     margin-top: 480px !important;
   }
+}
+
+/*  fin CSS services section */
+
+/*  CSS page galerie section */
+
+#galerie .services {
+  flex-wrap: wrap;
+}
+
+#galerie .services-card {
+  min-width: 300px;
 }
