@@ -26,7 +26,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link 
+rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+/>
     <link rel="stylesheet" href="./../css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./../css/style.css" type="text/css" />
     <link
@@ -113,73 +116,118 @@
         <h1>Contact</h1>
         <h2>Contactez-nous</h2>
         <p class="mt-4">
-          Pour nous contacter pour toutes demandes de devis ou pour des
-          renseignements supplémentaires sur nos services, veuillez utiliser les
-          informations suivantes : Adresse e-mail :
-          contact@decoratriceflorale.com Numéro de téléphone : (555) 555-5555
-          Adresse postale : 12, rue de la fleur, 75000 Paris, France Nous sommes
-          disponibles du lundi au vendredi de 9h00 à 17h00 pour répondre à
-          toutes vos questions. Nous nous efforçons de répondre à toutes les
-          demandes dans les plus brefs délais. Nous sommes impatients de vous
-          aider à rendre votre événement unique et mémorable avec nos créations
-          florales!s
+          Vous préparez un évènement? <br> Je suis à votre disposition pour toutes demandes de devis ou de
+          renseignements complémentaires sur mes services. <br>
+          Je serai ravie de vous aider à rendre votre évènement unique et mémorable!          
         </p>
       </div>
     </div>
   </section>
-  <section id="coursFloral" class="mt-5">
+  <section id="contactForm" class="mt-5 pb-2">
     <div class="container mt-5">
-      <div class="cours-text">
-        <h2>Cours d'Art Floral</h2>
-        <p class="mt-4">
-          Je donne des cours et anime des ateliers pour apprendre les techniques
-          de base de l'art floral. Offrir des cours d'art floral est une
-          excellente façon pour moi de partager ma passion pour les fleurs et de
-          transmettre mes compétences à d'autres personnes.<br />
-          <br />
-          J'organise des cours de groupe dans un espace dédié. Les cours peuvent
-          être de courte durée, tels que des ateliers d'une journée, ou des
-          cours plus longs, tels que des cours hebdomadaires ou mensuels. <br />
-          <br />
-          Je peux également offrir des cours privés individuels, où je peux
-          travailler avec des clients pour créer des compositions florales
-          personnalisées pour des occasions spécifiques.
-        </p>
+      <div class="contact-form">
+        <form>
+          <fieldset>
+            <legend>N'hésitez pas à me laisser un message</legend>
+            <div class="form-group">
+              <label for="name" class="form-label mt-4">Nom</label>
+              <input type="text" class="form-control" id="name" required>
+           </div>
+            <div class="form-group">
+              <label for="email" class="form-label mt-4">Email</label>
+              <input type="email" class="form-control" id="email" pattern=".+@globex\.com" size="30" required>            
+            </div>
+           
+            <div class="form-group">
+              <label for="phone" class="form-label mt-4">Numéro de téléphone</label>
+              <input type="tel" class="form-control" id="phone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="select" class="form-label mt-4">Objet</label>
+              <select class="form-select" id="select" required>
+                <option>Demande d'informations</option>
+                <option>Demande de devis</option>              
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label mt-4">Votre message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            
+            <fieldset class="form-group mt-5">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="rgpdCheckbox">
+                <label class="form-check-label" for="rgpdCheckbox">
+                  J'autorise ce site à conserver mes données personnelles transmises via ce formulaire. <br>
+                  Aucune exploitation commerciale ne sera faite des données conservées. <br>
+                  <a href="">Voir Notre politique de gestion de données</a>
+                </label>
+              </div>           
+            </fieldset>
+            
+            <button type="submit" class="button btn btn-dark mt-5">Envoyer</button>
+          </fieldset>
+        </form>
       </div>
-
-      <div class="cours-img mt-5">
+      <div class="contact-img">
+        
         <img
-          src="./../images/services/jardinage_mpt.jpg"
-          alt="cours de jardinage"
+          src="./../images/contact/ikebena_contact_desktop.jpg"
+          alt="ikebena"
           width="100%"
         />
       </div>
+      
+      </div>
+  </section>
     </div>
   </section>
-  <section id="jardin" class="mt-5 mb-5">
+  <section id="contactDetails" class="mt-5 mb-5">
     <div class="container mt-5">
-      <div class="cours-img">
+      
+      <div class="contact-details">
+        <h3 class="mt-5">Contact</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">
+            <img src="./../images/icons/phone-solid.svg" alt="téléphone" width="32" height="32">
+          </span> + 33 (0)6 56 78 75 36
+        </li>
+          <li>
+            <span class="icon">
+              <img src="./../images/icons/email.svg" alt="email" width="32" height="32"/>
+            </span> serre.bopha@gmail.com
+          </li>
+        </ul>        
+      </div>
+      <div class="details-img">
         <img
-          src="./../images/services/garden_3.jpg"
+          src="./../images/contact/natur_elle.jpg"
           alt="jardin"
           width="100%"
         />
       </div>
-      <div class="jardin-text">
-        <h2 class="mt-5">Conception de jardin</h2>
-        <p class="mt-4">
-          La conception de jardin est l'art de créer des jardins et des espaces
-          extérieurs. <br /><br />
-          Je prends soin de la selection des plantes, des arbustes, des arbres
-          et des fleurs, ainsi que de la disposition des éléments de paysage
-          tels que les rochers, les cascades, les étangs, les chemins et les
-          murs.
-          <br />
-          <br />
-          Je tiens compte des besoins des plantes, de l'exposition et des
-          exigences de l'espace ainsi que les préférences des clients lors de la
-          conception d'un jardin.
-        </p>
+      <div class="social-network">
+        <h3 class="mt-5">Suivez-moi</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="icon">
+              <img src="./../images/icons/facebook.svg" alt="facebook logo" width="32" height="32"/>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <img src="./../images/icons/instagram.svg" alt="instagram logo" width="32" height="32"/>
+            </span>
+          </li>
+          <li>
+            <span class="icon">
+              <img src="./../images/icons/linkedin.svg" alt="linkedin logo" width="32" height="32"/>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>

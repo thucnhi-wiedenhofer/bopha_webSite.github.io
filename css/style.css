@@ -13,6 +13,16 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+h1 {
+  position: absolute;
+  font-size: 200px !important;
+  line-height: 200px;
+  letter-spacing: 10px;
+  z-index: 1;
+  color: #f0f0f5;
+  font-weight: 700 !important;
+}
+
 h2 {
   font-size: 56px !important;
   font-weight: 700 !important;
@@ -31,6 +41,18 @@ h2 {
   }
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 130px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    display: none;
+  }
+}
+
 @media (max-width: 414px) {
   h2 {
     font-size: 45px !important;
@@ -42,6 +64,9 @@ h2 {
 
 #home h1 {
   font-size: 80px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0px;
+  position: relative;
 }
 
 .overlay {
@@ -96,6 +121,10 @@ h2 {
   }
   #home h1 {
     font-size: 30px !important;
+    display: block;
+  }
+  h6 {
+    display: none;
   }
 }
 /*   FIN CSS home section */
@@ -108,16 +137,6 @@ h2 {
   justify-content: end;
 }
 
-#aPropos h1 {
-  position: absolute;
-  left: 80px;
-  font-size: 200px;
-  line-height: 200px;
-  letter-spacing: 10px;
-  z-index: 1;
-  color: #f0f0f5;
-  font-weight: 700;
-}
 
 #aPropos h2 {
   padding-top: 180px;
@@ -134,9 +153,31 @@ h2 {
   max-width: 60%;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1609px) {
   #aPropos h1 {
-    left: 200px;
+    left: 300px;
+    top: 106vh;
+  }
+}
+
+@media (max-width: 1608px) {
+  #aPropos h1 {
+    left: 238px;
+    top: 139vh;
+  }
+}
+
+@media (max-width: 1440px) {
+  #aPropos h1 {
+    left: 100px;
+    top: 109vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  #aPropos h1 {
+    left: 90px;
+    top: 123vh;
   }
 }
 
@@ -150,8 +191,10 @@ h2 {
     margin-left: 10%;
   }
   #aPropos h1 {
-    font-size: 110px;
+    top: 157vh;
+    left: 120px;
   }
+
   #aPropos h2 {
     font-size: 50px;
     padding-top: 150px;
@@ -162,15 +205,31 @@ h2 {
     margin: 50px auto;
   }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 834px) {
   #aPropos h1 {
-    display: none;
+    top: 95vh;
+    left: 20px;
   }
+
   #aPropos h2 {
     font-size: 40px;
     line-height: 50px;
-    padding-top: 20px;
+    text-align: center;
+    padding-top: 180px;
+    margin-bottom: 50px;
+  }
+
+  .welcom-img {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  #aPropos h2 {
+    margin-top: 0px;
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 10px;
     text-align: center;
   }
   .welcom-img {
@@ -182,7 +241,7 @@ h2 {
 /*  fin CSS aPropos section */
 
 /*  CSS  Services section */
- 
+
 .arrow {
   margin-left: 20px;
 }
@@ -361,18 +420,11 @@ footer button {
 
 /*  fin CSS footer section */
 
-/*  CSS pages services section */
+/*  CSS page services section */
 
-#services h1 {
-  position: absolute;
-  top: -130px;
+#decoration h1 {
+  top: -164px;
   right: 98px;
-  font-size: 200px;
-  line-height: 200px;
-  letter-spacing: 10px;
-  z-index: 1;
-  color: #f0f0f5;
-  font-weight: 700;
 }
 
 .services-img {
@@ -399,9 +451,9 @@ footer button {
 }
 
 @media (max-width: 1024px) {
-  #services h1 {
-    top: -130px;
-    right: 20px;
+  #decoration h1 {
+    top: -70px;
+    right: 50px;
     font-size: 180px;
   }
   .services-text {
@@ -411,26 +463,22 @@ footer button {
   }
 }
 
-@media (max-width: 788px) {
-  #services h1 {
+@media (max-width: 835px) {
+  #decoration h1 {
     top: -110px;
     right: 100px;
-    font-size: 110px;
   }
-  #services h2 {
+  #decoration h2 {
     margin-top: -40px;
   }
   .services-text {
-    top: 400px;
+    top: 350px;
     right: -60px;
-    height: 200px;
+    height: 290px;
   }
 }
-@media (max-width: 414px) {
-  #services h1 {
-    display: none;
-  }
-  #services h2 {
+@media (max-width: 415px) {
+  #decoration h2 {
     margin-top: 0px;
   }
   .services-text {
@@ -445,7 +493,8 @@ footer button {
 }
 
 #coursFloral {
-  background-color:#f0f0f5;
+  background-color: #f0f0f5;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -486,24 +535,27 @@ footer button {
     align-items: center;
   }
 
-  .cours-text, .jardin-text {
+  .cours-text,
+  .jardin-text {
     width: 90%;
     margin-top: 30px;
   }
-  .cours-img {    
+  .cours-img {
     width: 80%;
-    margin: 10% ;
+    margin: 10%;
   }
 }
 @media (max-width: 767px) {
-  #coursFloral .container {
-    margin-top: 400px !important;
+  .services-text {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding-left: 30px;
+    height: 410px;
   }
-}
 
-@media (max-width: 320px) {
   #coursFloral .container {
-    margin-top: 480px !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -518,3 +570,114 @@ footer button {
 #galerie .services-card {
   min-width: 300px;
 }
+
+/*  fin CSS galerie section */
+
+/*  CSS page contact section */
+
+#contact h1 {
+  top: -164px;
+  right: 98px;
+}
+
+#contactForm {  
+  background-color: #f0f0f5;  
+}
+
+#contactForm .container,
+#contactDetails .container{
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+}  
+
+#contactForm form {
+  max-width: 500px;
+}
+.contact-img {
+  width: 40%;
+}
+
+textarea {
+  resize: none !important;
+}
+
+.form-control, .form-select {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.details-img img{
+  width:50%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+.social-network ul{
+  display: flex;
+}
+
+.icon img {
+  margin-right: 10px;  
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  #contact h1 {
+    top: -100px;
+    right: 70px;
+    font-size: 180px;
+  }  
+}
+
+@media (max-width: 834px) {
+  #contactForm .container {
+    width: 70%;
+    padding-left: 10%;
+    padding-top: 100px;
+  } 
+  
+  .contact-img, .details-img{
+    display: none;
+  }
+  #contactDetails .container {
+    padding-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  }
+
+@media (max-width: 414px) {
+  #contact h2 {
+    margin-top: 0px;
+  }  
+  #contactForm .container {
+    width: 100%;
+    padding-top: 30px;
+  }   
+  #contactDetails .container {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px ;
+  }
+  .details-img {    
+    display: block;
+  }
+  .details-img  img { 
+    margin-left: 0%;
+    margin-top: 20px;
+    width:70%;
+  }
+  }
+
+
+
