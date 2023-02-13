@@ -27,9 +27,9 @@
       rel="stylesheet"
     />
     <link 
-rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
-/>
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+      />
     <link rel="stylesheet" href="./../css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./../css/style.css" type="text/css" />
     <link
@@ -42,7 +42,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./../index.html">
         <img
           src="./../images/logo/logo_bopha_navbar_transparent.png"
           alt="logo"
@@ -64,15 +64,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link active" aria-current="page" href="./../index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">A propos</a>
+            <a class="nav-link" href="./../index.html#aPropos">A propos</a>
           </li>
           <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
-              href="#services"
+              href=".../pages/services.html"
               id="navbarDropdown"
               role="button"
               data-bs-toggle="dropdown"
@@ -81,22 +81,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#services">Evènements</a></li>
+              <li><a class="dropdown-item" href="./../pages/services.html#decoration">Evènements</a></li>
+              <li><a class="dropdown-item" href="./../pages/services.html#coursFloral">Cours d'Art Floral</a></li>
               <li>
-                <a class="dropdown-item" href="#coursFloral"
-                  >Cours d'Art Floral</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#jardin">Conception de jardin</a>
+                <a class="dropdown-item" href="./../pages/services.html#jardin">Conception de jardin</a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Galerie</a>
+            <a class="nav-link" href="./../pages/galerie.html">Galerie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="./../pages/contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -196,9 +192,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
           </span> + 33 (0)6 56 78 75 36
         </li>
           <li>
+            <a target="_blank" href="mailto:serre.bopha@gmail.com">
             <span class="icon">
               <img src="./../images/icons/email.svg" alt="email" width="32" height="32"/>
             </span> serre.bopha@gmail.com
+          </a>
           </li>
         </ul>        
       </div>
@@ -213,19 +211,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
         <h3 class="mt-5">Suivez-moi</h3>
         <ul class="contact-list">
           <li>
+            <a target="_blank" href="https://www.facebook.com/serre.bopha">
             <span class="icon">
               <img src="./../images/icons/facebook.svg" alt="facebook logo" width="32" height="32"/>
             </span>
+          </a>
           </li>
           <li>
+            <a target="_blank" href="https://www.instagram.com/bopha_serre/">
             <span class="icon">
               <img src="./../images/icons/instagram.svg" alt="instagram logo" width="32" height="32"/>
             </span>
+          </a>
           </li>
           <li>
+            <a target="_blank" href="https://www.linkedin.com/in/bopha-serre-3751351b/?originalSubdomain=fr">
             <span class="icon">
               <img src="./../images/icons/linkedin.svg" alt="linkedin logo" width="32" height="32"/>
             </span>
+            </a>
           </li>
         </ul>
       </div>
@@ -244,23 +248,22 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css
       <nav class="navbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link active" aria-current="page" href="./../index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">A propos</a>
+            <a class="nav-link" href="./../index.html#aPropos">A propos</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="./../pages/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
-      <button type="button" class="button btn btn-dark">
-        Voir la Galerie<img
-          src="./../images/icons/arrow-icon.svg"
-          class="arrow"
-        />
+      <a target="_blank" href="./../pages/galerie.html">
+        <button type="button" class="button btn btn-dark">
+        Voir la Galerie<img src="./../images/icons/arrow-icon.svg" class="arrow" />
       </button>
+      </a>      
     </div>
   </footer>
 
