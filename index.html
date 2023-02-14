@@ -30,6 +30,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <link
@@ -39,322 +40,360 @@
       crossorigin="anonymous"
     />
   </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container" data-aos="fade-right">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./images/logo/logo_bopha_navbar_transparent.png"
+            alt="logo"
+            width="100"
+            height="100"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html#home"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#aPropos">A propos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="./pages/services.html"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./pages/services.html#decoration"
+                    >Evènements</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./pages/services.html#coursFloral"
+                    >Cours d'Art Floral</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/services.html#jardin"
+                    >Conception de jardin</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/galerie.html">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="./index.html">
+    <section id="home" class="home">
+      <div class="container" data-aos="fade-right">
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselHome"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHome"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHome"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="./images/home/wedding_bunch_desktop2.jpg"
+                class="desktop-img w-100"
+                alt="composition florale pour un mariage"
+              />
+              <img
+                src="./images/home/wedding_bunch_mobile.jpg"
+                class="tablet-img w-100"
+                alt="composition florale pour un mariage"
+              />
+              <img
+                src="./images/home/wedding_bunch_mobile.jpg"
+                class="mobile-img w-100"
+                alt="composition florale pour un mariage"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-md-block">
+                <h1>Evènements</h1>
+                <h6>Composition florale pour un mariage - Marseille.</h6>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="./images/home/art_floral_desktop.jpg"
+                class="desktop-img w-100"
+                alt="Composition florale champêtre"
+              />
+              <img
+                src="./images/home/art_floral_mobile.jpg"
+                class="tablet-img w-100"
+                alt="Composition florale champêtre"
+              />
+              <img
+                src="./images/home/art_floral_mobile.jpg"
+                class="mobile-img w-100"
+                alt="Composition florale champêtre"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-md-block">
+                <h1>Art floral</h1>
+                <h6>Composition florale champêtre</h6>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/home/garden_desktop2.jpg"
+                class="desktop-img w-100"
+                alt="conception jardin à Phnom Penh"
+              />
+              <img
+                src="./images/home/garden_mobile.jpg"
+                class="tablet-img w-100"
+                alt="conception jardin à Phnom Penh"
+              />
+              <img
+                src="./images/home/garden_mobile.jpg"
+                class="mobile-img w-100"
+                alt="conception jardin à Phnom Penh"
+              />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-md-block">
+                <h1>Conception de jardin</h1>
+                <h6>Conception d'un jardin à Phnom Penh.</h6>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHome"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHome"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="aPropos" class="mt-2">
+      <div class="container" data-aos="fade-up">
+        <div class="welcome-text">
+          <h1>Bienvenu</h1>
+          <h2>Bienvenu chez Bopha, Désigner Floral</h2>
+
+          <figure class="text-center mb-5">
+            <blockquote class="blockquote">
+              <p>
+                “Passionnée par les fleurs et riche d'une expérience depuis plus
+                de trente ans dans l'Art Floral, j'aime créer des compositions
+                uniques et sur mesure pour chaque client. Que ce soit pour un
+                mariage, un baptême, une soirée de gala ou tout autre événement,
+                je met ma créativité et mon savoir-faire à votre disposition
+                pour rendre votre jour spécial encore plus beau.”
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">Bopha</figcaption>
+          </figure>
+        </div>
+        <div class="welcom-img">
+          <img
+            src="./images/aPropos/bopha.jpg"
+            alt="Bopha, designer floral"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="mt-5">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <h2 data-aos="fade-left">Services</h2>
+          <a target="_blank" href="./pages/services.html">
+            <button
+              type="button"
+              class="button btn btn-dark"
+              data-aos="fade-right"
+            >
+              Voir tout<img src="./images/icons/arrow-icon.svg" class="arrow" />
+            </button>
+          </a>
+        </div>
+        <div class="services mt-5">
+          <div class="services-card mb-5" data-aos="flip-right">
+            <a href="./pages/services.html#decoration">
+              <img
+                class="desktop-img w-100"
+                src="./images/services/wedding_flowers_desktop.jpg"
+                alt="bouquet de mariée"
+              />
+              <img
+                class="tablet-img w-100"
+                src="./images/services/wedding_flowers_tablet.jpg"
+                alt="bouquet de mariée"
+              />
+              <img
+                class="mobile-img w-100"
+                src="./images/services/wedding_flowers_mobile.jpg"
+                alt="bouquet de mariée"
+              />
+              <div class="overlay"></div>
+              <h4 class="card-title">Compostion florale</h4>
+            </a>
+          </div>
+          <div class="services-card middle mb-5" data-aos="flip-right">
+            <a href="./pages/services.html#coursFloral">
+              <img
+                class="desktop-img w-100"
+                src="./images/services/cours_desktop.jpg"
+                alt=""
+              />
+              <img
+                class="tablet-img w-100"
+                src="./images/services/cours_tablet.jpg"
+                alt=""
+              />
+              <img
+                class="mobile-img w-100"
+                src="./images/services/cours_mobile.jpg"
+                alt=""
+              />
+              <div class="overlay"></div>
+              <h4 class="card-title">Cours d'Art Floral</h4>
+            </a>
+          </div>
+          <div class="services-card mb-5" data-aos="flip-right">
+            <a href="./pages/services.html#jardin">
+              <img
+                class="desktop-img w-100"
+                src="./images/services/garden_4_desktop2.jpg"
+                alt="Conception de jardin"
+              />
+              <img
+                class="tablet-img w-100"
+                src="./images/services/garden_4_tablet.jpg"
+                alt="Conception de jardin"
+              />
+              <img
+                class="mobile-img w-100"
+                src="./images/services/garden_4_mobile.jpg"
+                alt="Conception de jardin"
+              />
+              <div class="overlay"></div>
+              <h4 class="card-title">Conception de jardin</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-img">
         <img
           src="./images/logo/logo_bopha_navbar_transparent.png"
           alt="logo"
-          width="100"
-          height="100"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarToggler"
-        aria-controls="navbarColor02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html#home">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#aPropos">A propos</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="./pages/services.html"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./pages/services.html#decoration">Evènements</a></li>
-              <li><a class="dropdown-item" href="./pages/services.html#coursFloral">Cours d'Art Floral</a></li>
-              <li>
-                <a class="dropdown-item" href="./pages/services.html#jardin">Conception de jardin</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/galerie.html">Galerie</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-  <section id="home" class="home">
-    <div class="container">
-      <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselHome"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselHome"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselHome"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img
-              src="./images/home/wedding_bunch_desktop2.jpg"
-              class="desktop-img w-100"
-              alt="composition florale pour un mariage"
-            />
-            <img
-              src="./images/home/wedding_bunch_mobile.jpg"
-              class="tablet-img w-100"
-              alt="composition florale pour un mariage"
-            />
-            <img
-              src="./images/home/wedding_bunch_mobile.jpg"
-              class="mobile-img w-100"
-              alt="composition florale pour un mariage"
-            />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-md-block">
-              <h1>Evènements</h1>
-              <h6>Composition florale pour un mariage - Marseille.</h6>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img
-              src="./images/home/art_floral_desktop.jpg"
-              class="desktop-img w-100"
-              alt="Composition florale champêtre"
-            />
-            <img
-              src="./images/home/art_floral_mobile.jpg"
-              class="tablet-img w-100"
-              alt="Composition florale champêtre"
-            />
-            <img
-              src="./images/home/art_floral_mobile.jpg"
-              class="mobile-img w-100"
-              alt="Composition florale champêtre"
-            />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-md-block">
-              <h1>Art floral</h1>
-              <h6>Composition florale champêtre</h6>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./images/home/garden_desktop2.jpg"
-              class="desktop-img w-100"
-              alt="conception jardin à Phnom Penh"
-            />
-            <img
-              src="./images/home/garden_mobile.jpg"
-              class="tablet-img w-100"
-              alt="conception jardin à Phnom Penh"
-            />
-            <img
-              src="./images/home/garden_mobile.jpg"
-              class="mobile-img w-100"
-              alt="conception jardin à Phnom Penh"
-            />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-md-block">
-              <h1>Conception de jardin</h1>
-              <h6>Conception d'un jardin à Phnom Penh.</h6>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselHome"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselHome"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <section id="aPropos" class="mt-2">
-    <div class="container">
-      <div class="welcome-text">
-        <h1>Bienvenu</h1>
-        <h2>Bienvenu chez Bopha, Désigner Floral</h2>
-
-        <figure class="text-center mb-5">
-          <blockquote class="blockquote">
-            <p>
-              “Passionnée par les fleurs et riche d'une expérience depuis plus
-              de trente ans dans l'Art Floral, j'aime créer des compositions
-              uniques et sur mesure pour chaque client. Que ce soit pour un
-              mariage, un baptême, une soirée de gala ou tout autre événement,
-              je met ma créativité et mon savoir-faire à votre disposition pour
-              rendre votre jour spécial encore plus beau.”
-            </p>
-          </blockquote>
-          <figcaption class="blockquote-footer">Bopha</figcaption>
-        </figure>
-      </div>
-      <div class="welcom-img">
-        <img
-          src="./images/aPropos/bopha.jpg"
-          alt="Bopha, designer floral"
-          class="img-fluid"
+          width="100%"
         />
       </div>
-    </div>
-  </section>
+      <div class="container">
+        <nav class="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#aPropos">A propos</a>
+            </li>
 
-  <section id="services" class="mt-5">
-    <div class="container">
-      <div class="d-flex justify-content-between">
-        <h2>Services</h2>
-        <a target="_blank" href="./pages/services.html">
-          <button type="button" class="button btn btn-dark">
-          Voir tout<img src="./images/icons/arrow-icon.svg" class="arrow" />
-        </button>
-      </a>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a target="_blank" href="./pages/galerie.html">
+          <button
+            type="button"
+            class="button btn btn-dark"
+            data-aos="flip-right"
+          >
+            Voir la Galerie<img
+              src="./images/icons/arrow-icon.svg"
+              class="arrow"
+            />
+          </button>
+        </a>
       </div>
-      <div class="services mt-5">
-        <div class="services-card mb-5">
-          <a href="./pages/services.html#decoration">
-            <img
-              class="desktop-img w-100"
-              src="./images/services/wedding_flowers_desktop.jpg"
-              alt="bouquet de mariée"
-            />
-            <img
-              class="tablet-img w-100"
-              src="./images/services/wedding_flowers_tablet.jpg"
-              alt="bouquet de mariée"
-            />
-            <img
-              class="mobile-img w-100"
-              src="./images/services/wedding_flowers_mobile.jpg"
-              alt="bouquet de mariée"
-            />
-            <div class="overlay"></div>
-            <h4 class="card-title">Compostion florale</h4>
-          </a>
-        </div>
-        <div class="services-card middle mb-5">
-          <a href="./pages/services.html#coursFloral">
-            <img
-              class="desktop-img w-100"
-              src="./images/services/cours_desktop.jpg"
-              alt=""
-            />
-            <img
-              class="tablet-img w-100"
-              src="./images/services/cours_tablet.jpg"
-              alt=""
-            />
-            <img
-              class="mobile-img w-100"
-              src="./images/services/cours_mobile.jpg"
-              alt=""
-            />
-            <div class="overlay"></div>
-            <h4 class="card-title">Cours d'Art Floral</h4>
-          </a>
-        </div>
-        <div class="services-card mb-5">
-          <a href="./pages/services.html#jardin">
-            <img
-              class="desktop-img w-100"
-              src="./images/services/garden_4_desktop2.jpg"
-              alt="Conception de jardin"
-            />
-            <img
-              class="tablet-img w-100"
-              src="./images/services/garden_4_tablet.jpg"
-              alt="Conception de jardin"
-            />
-            <img
-              class="mobile-img w-100"
-              src="./images/services/garden_4_mobile.jpg"
-              alt="Conception de jardin"
-            />
-            <div class="overlay"></div>
-            <h4 class="card-title">Conception de jardin</h4>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="footer">
-    <div class="footer-img">
-      <img
-        src="./images/logo/logo_bopha_navbar_transparent.png"
-        alt="logo"
-        width="100%"
-      />
-    </div>
-    <div class="container">
-      <nav class="navbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html#aPropos">A propos</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <a target="_blank" href="./pages/galerie.html">
-        <button type="button" class="button btn btn-dark">
-        Voir la Galerie<img src="./images/icons/arrow-icon.svg" class="arrow" />
-      </button>
-      </a>
-      
-    </div>
-  </footer>
-
-  <body>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease-in-out",
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

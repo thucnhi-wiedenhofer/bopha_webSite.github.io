@@ -599,6 +599,11 @@ footer button {
 #contactForm form {
   max-width: 500px;
 }
+
+#contactForm a {
+  color:#850f9b;
+}
+
 .contact-img {
   width: 40%;
 }
