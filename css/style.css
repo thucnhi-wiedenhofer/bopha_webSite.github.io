@@ -131,7 +131,8 @@ h2 {
 
 /*  All CSS aPropos section */
 #aPropos .container {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -155,29 +156,27 @@ h2 {
 
 @media (min-width: 1609px) {
   #aPropos h1 {
-    left: 300px;
-    top: 106vh;
+    left: 50px;
+    top: -3vh;
   }
 }
 
 @media (max-width: 1608px) {
   #aPropos h1 {
-    left: 238px;
-    top: 139vh;
+    left: 38px;
+    top:-3vh;
   }
 }
 
 @media (max-width: 1440px) {
   #aPropos h1 {
     left: 100px;
-    top: 109vh;
   }
 }
 
 @media (max-width: 1280px) {
   #aPropos h1 {
     left: 90px;
-    top: 123vh;
   }
 }
 
@@ -191,8 +190,8 @@ h2 {
     margin-left: 10%;
   }
   #aPropos h1 {
-    top: 157vh;
-    left: 120px;
+    top: 0vh;
+    left: 100px;
   }
 
   #aPropos h2 {
@@ -207,8 +206,8 @@ h2 {
 }
 @media (max-width: 834px) {
   #aPropos h1 {
-    top: 95vh;
-    left: 20px;
+    top: 0vh;
+    left: 10px;
   }
 
   #aPropos h2 {
@@ -427,6 +426,10 @@ footer button {
   right: 98px;
 }
 
+#decoration .container {
+  margin-bottom: 200px;
+}
+
 .services-img {
   position: relative;
   width: 100%;
@@ -480,6 +483,10 @@ footer button {
 @media (max-width: 415px) {
   #decoration h2 {
     margin-top: 0px;
+  }
+
+  #decoration .container {
+    margin-bottom: 80px;
   }
   .services-text {
     top: 360px;
@@ -580,6 +587,10 @@ footer button {
   right: 98px;
 }
 
+#contact .container {
+  margin-bottom: 200px;
+}
+
 #contactForm {  
   background-color: #f0f0f5;  
 }
@@ -669,7 +680,11 @@ textarea {
 @media (max-width: 414px) {
   #contact h2 {
     margin-top: 0px;
-  }  
+  } 
+  
+  #contact .container {
+    margin-bottom: 80px;
+  }
   #contactForm .container {
     width: 100%;
     padding-top: 30px;

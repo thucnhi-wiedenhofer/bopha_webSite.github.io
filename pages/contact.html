@@ -30,6 +30,7 @@
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
       />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./../css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="./../css/style.css" type="text/css" />
     <link
@@ -99,7 +100,7 @@
     </div>
   </nav>
 
-  <section id="contact" class="mb-5">
+  <section id="contact">
     <div class="container" data-aos="fade-right">
       <div class="services-img">
         <img
@@ -109,7 +110,7 @@
         />
       </div>
       <div class="services-text">
-        <h1>Contact</h1>
+        <h1 data-aos="zoom-in">Contact</h1>
         <h2>Contactez-nous</h2>
         <p class="mt-4">
           Vous préparez un évènement? <br> Je suis à votre disposition pour toutes demandes de devis ou de
@@ -119,8 +120,8 @@
       </div>
     </div>
   </section>
-  <section id="contactForm" class="mt-5 pb-2">
-    <div class="container mt-5" data-aos="fade-up">
+  <section id="contactForm" class="mt-5 pb-2" data-aos="fade-down">
+    <div class="container mt-5" data-aos="fade-down">
       <div class="contact-form">
         <form>
           <fieldset>
@@ -266,7 +267,15 @@
       </a>      
     </div>
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease-in-out",
+    });
+  </script>
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
