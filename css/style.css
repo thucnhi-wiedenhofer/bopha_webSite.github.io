@@ -138,7 +138,6 @@ h2 {
   justify-content: end;
 }
 
-
 #aPropos h2 {
   padding-top: 180px;
   margin-bottom: 56px;
@@ -164,7 +163,7 @@ h2 {
 @media (max-width: 1608px) {
   #aPropos h1 {
     left: 38px;
-    top:-3vh;
+    top: -3vh;
   }
 }
 
@@ -507,7 +506,8 @@ footer button {
 
 #coursFloral .container,
 #jardin .container {
-  margin-top: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: row;
 }
@@ -529,7 +529,7 @@ footer button {
 
 @media (max-width: 1279px) {
   #coursFloral .container {
-    margin-top: 100px;
+    margin-bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -591,12 +591,12 @@ footer button {
   margin-bottom: 200px;
 }
 
-#contactForm {  
-  background-color: #f0f0f5;  
+#contactForm {
+  background-color: #f0f0f5;
 }
 
 #contactForm .container,
-#contactDetails .container{
+#contactDetails .container {
   width: 100%;
   padding-top: 50px;
   margin-bottom: 80px;
@@ -605,14 +605,14 @@ footer button {
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: center;
-}  
+}
 
 #contactForm form {
   max-width: 500px;
 }
 
 #contactForm a {
-  color:#850f9b;
+  color: #850f9b;
 }
 
 .contact-img {
@@ -623,13 +623,14 @@ textarea {
   resize: none !important;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   border: none !important;
   border-radius: 0px !important;
 }
 
-.details-img img{
-  width:50%;
+.details-img img {
+  width: 50%;
   border-radius: 50%;
   margin-left: 20%;
 }
@@ -638,12 +639,12 @@ textarea {
   list-style: none;
   padding-left: 0;
 }
-.social-network ul{
+.social-network ul {
   display: flex;
 }
 
 .icon img {
-  margin-right: 10px;  
+  margin-right: 10px;
   margin-top: 10px;
 }
 
@@ -657,7 +658,7 @@ textarea {
     top: -100px;
     right: 70px;
     font-size: 180px;
-  }  
+  }
 }
 
 @media (max-width: 834px) {
@@ -665,9 +666,10 @@ textarea {
     width: 70%;
     padding-left: 10%;
     padding-top: 100px;
-  } 
-  
-  .contact-img, .details-img{
+  }
+
+  .contact-img,
+  .details-img {
     display: none;
   }
   #contactDetails .container {
@@ -675,34 +677,31 @@ textarea {
     padding-left: 10%;
     padding-right: 10%;
   }
-  }
+}
 
 @media (max-width: 414px) {
   #contact h2 {
     margin-top: 0px;
-  } 
-  
+  }
+
   #contact .container {
     margin-bottom: 80px;
   }
   #contactForm .container {
     width: 100%;
     padding-top: 30px;
-  }   
+  }
   #contactDetails .container {
     justify-content: center;
     text-align: center;
-    padding-bottom: 50px ;
+    padding-bottom: 50px;
   }
-  .details-img {    
+  .details-img {
     display: block;
   }
-  .details-img  img { 
+  .details-img img {
     margin-left: 0%;
     margin-top: 20px;
-    width:70%;
+    width: 70%;
   }
-  }
-
-
-
+}
